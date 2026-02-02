@@ -26,6 +26,7 @@ router.post("/post", upload.fields([
     { name: "file", maxCount: 1 },
     { name: "image", maxCount: 1 },
 ]), createUser);
-router.post("/dummy", loginRegister);
+
+router.post("/test", loginRegister);
 
 export default router
