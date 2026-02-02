@@ -27,7 +27,7 @@ router.post("/post", upload.fields([
     { name: "image", maxCount: 1 },
 ]), createUser);
 
-router.get("/get", getUser);
+router.put("/up/:id", updateUser);
 
 
 export default router
