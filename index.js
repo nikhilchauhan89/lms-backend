@@ -278,7 +278,7 @@ app.get("/data", async (req, res) => {
   }
 
 })
-app.get("/data3", async (req, res) => {
+app.get("/dataFetxch", async (req, res) => {
   const user = await cardModel.find()
   if (user) {
     res.send({
