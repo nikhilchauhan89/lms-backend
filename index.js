@@ -262,9 +262,23 @@ app.delete("/delete/:id", async (req, res) => {
 
 
 app.get("/data", async (req, res) => {
-  // const db = await connection();
-  //   const collection = await db.collection("users1")
-  // const result = await collection.find().toArray()
+  const user = await cardModel.find()
+  if (user) {
+    res.send({
+      message: "task  fetched",
+      success: true,
+      user
+    })
+  } else {
+    res.send({
+      message: "task list not fetched !try again",
+      success: false
+    })
+
+  }
+
+})
+app.get("/data1", async (req, res) => {
   const user = await cardModel.find()
   if (user) {
     res.send({
