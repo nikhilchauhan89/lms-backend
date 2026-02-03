@@ -278,7 +278,7 @@ app.get("/data", async (req, res) => {
   }
 
 })
-app.get("/data1", async (req, res) => {
+app.get("/data2", async (req, res) => {
   const user = await cardModel.find()
   if (user) {
     res.send({
