@@ -2,7 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "type": "module",
+=======
+>>>>>>> 51e1f831f5ec4fb695d9c9fad5e573005cd428c5
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^6.0.0",
+<<<<<<< HEAD
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^5.1.0",
@@ -21,5 +25,14 @@
     "mongoose": "^8.19.1",
     "multer": "^2.0.2",
     "nodemon": "^3.1.10"
+=======
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.1.4",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.11"
+>>>>>>> 51e1f831f5ec4fb695d9c9fad5e573005cd428c5
   }
 }
