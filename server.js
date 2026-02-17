@@ -2,6 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import userRoutes from "./routes/userRoutes.js"
 import cors from 'cors';
+import cookieParser from "cookie-parser";
 
 
 const app = express()
@@ -23,8 +24,9 @@ app.use(
 app.use(express.json())
 app.use("/uploads", express.static("uploads"));
 
-
+app.use(cookieParser());
 app.use("/api", userRoutes);
+
 
 app.listen(3000, (res, req) => {
     console.log("app running on 3000 port ")
